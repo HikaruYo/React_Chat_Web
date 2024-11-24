@@ -6,7 +6,7 @@ import List from "./components/list/List.jsx";
 function App() {
   return (
     <div
-      className="h-screen w-full bg-cover bg-center bg-no-repeat"
+      className="h-screen w-full bg-cover bg-center bg-no-repeat text-white"
       style={{
         backgroundImage: "url('/src/assets/background.gif')",
       }}
