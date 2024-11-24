@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Chat from "./components/chat/Chat.jsx";
+import Detail from "./components/detail/Detail.jsx";
+import List from "./components/list/List.jsx";
 
 function App() {
   return (
@@ -10,9 +13,11 @@ function App() {
     >
       <div className="h-[100vh] flex items-center justify-center">
         <div
-          className="w-[90vw] h-[90vh] bg-blue-400 bg-opacity-70 backdrop-blur-sm rounded-md border-2 border-gray-100 border-opacity-25"
+          className="flex w-[90vw] h-[90vh] bg-blue-400 bg-opacity-70 backdrop-blur-sm rounded-md border-2 border-gray-100 border-opacity-25"
         >
-          app
+          <List />
+          <Chat />
+          <Detail />
         </div>
       </div>
     </div>
