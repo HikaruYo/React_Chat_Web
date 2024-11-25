@@ -83,8 +83,50 @@ const Chat = () => {
       </div>
 
       {/* Center */}
-      <div className="flex-1 p-4">
+      <div className="flex-1 flex flex-col gap-3 p-4 overflow-scroll">
+        {/* Other User Message */}
+        <div className="max-w-[70%] flex gap-3">
+          {/*<img src={Avatar} alt="" className="w-11 h-11 rounded-full object-cover" />*/}
+          {/* Texts */}
+          <div>
+            <p>
+              No lube, no protection, all night, all day, from the kitchen floor to the toilet seat,
+              from the dining table to the bedroom, from the bathroom sink to the shower,
+              from the front porch to the balcony, vertically, horizontally, quadratic, exponential,
+              logarithmic, while i gasp for air, scream and the upside down, on the floor, on the bad,
+              on the couch, on the chair, being carried, against the wall, outside, in a train, on a plane,
+              in the car, on the motorcycle, the bed of a truck, on a trampoline, in a bounce house, in the pool,
+              bent over, in the basement, against the window, have the most toe curling, back arching,
+              leg shaking, fist clenching, ear ringing, mouth drooling, ass clenching, nose sniffling,
+              eye watering, eye rolling, hip thursting, earthquaking, sheet gripping, knucklecracking,
+            </p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="max-w-[70%] flex gap-3">
+          {/* Texts */}
+          <div>
+            <p>
+              jaw dropping, hair pulling, theeth jittering, mind blogging, soul snatching, over stimulating,
+              vile, sloppy, heart wrenching, spine tingling, back breaking, atrocious, gushy, creamy, beastly,
+              lip biting, gravity defying, nail biting, sweaty, feet kicking, mind blowing, body shivering,
+              orgasmic, bone breaking, world ending, black hole creating, universe distroying, devious,
+              scrumptious, amazing, delightful, delectable, unbelievable, body numbing, back worthy, can't walk,
+              head nodding, soul evaporating, volcano erupting, sweet rolling, voice cracking, trembling,
+              sheets soaked, hair drenched, flabbergasting, lip locking, skin peeling, eyelash removing,
+              eye widening, pussy popping, nail scraching, back cuts, spectacular, extraordinary, splendid,
+              phenomenal, throat blasting, mouth foaming, heavenly, awakening, devils tango and I'd still
+              bouncing on it
+            </p>
+            <span>1 min ago</span>
+          </div>
+        </div>
 
+        {/* Own Messages */}
+        <div className="max-w-[70%] flex flex-col self-end gap-3">
+          <p>Of course honey🥰🥰</p>
+          <span>1 min ago</span>
+        </div>
       </div>
 
       {/* Bottom */}
