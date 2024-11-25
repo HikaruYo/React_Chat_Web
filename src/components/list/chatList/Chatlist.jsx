@@ -16,9 +16,9 @@ const Chatlist = () => {
         viewBox="0 0 24 24"
       >
         <path stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M5 12h14m-7 7V5"
         />
       </svg>
@@ -38,9 +38,9 @@ const Chatlist = () => {
       >
         <path
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="M5 12h14"
         />
       </svg>
@@ -51,7 +51,7 @@ const Chatlist = () => {
   return (
     <div className="flex-1 overflow-scroll">
       {/* Search */}
-      <div className="flex items-center gap-3 p-4">
+      <div className="flex items-center gap-2 p-4">
         {/* Search Bar */}
         <div className="flex-1 flex items-center gap-3 p-1 bg-blue-700 bg-opacity-50 rounded-md">
           {/* Search icon */}
@@ -66,8 +66,8 @@ const Chatlist = () => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeWidth="2"
               d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
             />
           </svg>
@@ -88,7 +88,23 @@ const Chatlist = () => {
       </div>
 
       {/* Chat, is this real? */}
-      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-2 border-gray-400">
+      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-[1px] border-gray-400">
+        {/* Another user avatar */}
+        <img
+          src={ Avatar }
+          alt=""
+          className="w-11 h-11 rounded-full object-cover"
+        />
+        {/* Text */}
+        <div className="flex flex-col">
+          {/* Username */}
+          <h3 className="font-semibold">Komi-chan</h3>
+          {/* Last message */}
+          <p className="text-sm font-light">Ohayou darling 🥰🥰</p>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-[1px] border-gray-400">
         {/* Another user avatar */}
         <img
           src={Avatar}
@@ -104,7 +120,7 @@ const Chatlist = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-2 border-gray-400">
+      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-[1px] border-gray-400">
         {/* Another user avatar */}
         <img
           src={Avatar}
@@ -120,7 +136,7 @@ const Chatlist = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-2 border-gray-400">
+      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-[1px] border-gray-400">
         {/* Another user avatar */}
         <img
           src={Avatar}
@@ -136,7 +152,7 @@ const Chatlist = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-2 border-gray-400">
+      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-[1px] border-gray-400">
         {/* Another user avatar */}
         <img
           src={Avatar}
@@ -152,23 +168,7 @@ const Chatlist = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-2 border-gray-400">
-        {/* Another user avatar */}
-        <img
-          src={Avatar}
-          alt=""
-          className="w-11 h-11 rounded-full object-cover"
-        />
-        {/* Text */}
-        <div className="flex flex-col">
-          {/* Username */}
-          <h3 className="font-semibold">Komi-chan</h3>
-          {/* Last message */}
-          <p className="text-sm font-light">Ohayou darling 🥰🥰</p>
-        </div>
-      </div>
-
-      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-2 border-gray-400">
+      <div className="flex items-center gap-3 p-4 cursor-pointer border-b-[1px] border-gray-400">
         {/* Another user avatar */}
         <img
           src={Avatar}
