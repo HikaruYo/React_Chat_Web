@@ -137,10 +137,10 @@ const Chat = () => {
             alt=""
             className="w-full h-72 rounded-lg object-cover"
           />
-          <div className="p-4 bg-blue-500 rounded-md">
+          <div className="p-3 bg-blue-500 rounded-md">
             <p>Of course honey🥰🥰</p>
-            <span className="text-sm">1 min ago</span>
           </div>
+          <span className="text-sm">1 min ago</span>
         </div>
         <div ref={ endRef }></div>
       </div>
