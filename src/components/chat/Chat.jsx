@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useRef, useState} from "react";
 import EmojiPicker from "emoji-picker-react";
 import Avatar from '../../assets/avatar2.jpg';
 import Image from '../../assets/violet.jpg';
@@ -6,6 +6,12 @@ import Image from '../../assets/violet.jpg';
 const Chat = () => {
   const [open, setOpen] = useState(false);
   const [text, setText] = useState("");
+
+  const endRef = useRef(null);
+
+  useEffect(() => {
+    endRef.current?.scrollIntoView({ behavior: "smooth" });
+  },[])
 
   const handleEmoji = e => {
     setText(prev=>prev+e.emoji)
@@ -136,6 +142,7 @@ const Chat = () => {
             <span className="text-sm">1 min ago</span>
           </div>
         </div>
+        <div ref={ endRef }></div>
       </div>
 
       {/* Bottom */}
@@ -229,7 +236,11 @@ const Chat = () => {
             <EmojiPicker open={ open } onEmojiClick={ handleEmoji } />
           </div>
         </div>
-        <button className="p-1 px-1.5 cursor-pointer border-none rounded-md text-white bg-blue-600">Send</button>
+        <button
+          className="p-1 px-1.5 cursor-pointer border-none rounded-md text-white bg-blue-600 hover:bg-blue-700 transform duration-300"
+        >
+          Send
+        </button>
       </div>
     </div>
   )
