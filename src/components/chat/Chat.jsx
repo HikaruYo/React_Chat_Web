@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import EmojiPicker from "emoji-picker-react";
 import Avatar from '../../assets/avatar2.jpg';
+import Image from '../../assets/violet.jpg';
 
 const Chat = () => {
   const [open, setOpen] = useState(false);
@@ -88,8 +89,8 @@ const Chat = () => {
         <div className="max-w-[70%] flex gap-3">
           {/*<img src={Avatar} alt="" className="w-11 h-11 rounded-full object-cover" />*/}
           {/* Texts */}
-          <div>
-            <p>
+          <div className="flex flex-1 flex-col gap-1">
+            <p className="p-4 bg-blue-500 bg-opacity-50 rounded-md">
               No lube, no protection, all night, all day, from the kitchen floor to the toilet seat,
               from the dining table to the bedroom, from the bathroom sink to the shower,
               from the front porch to the balcony, vertically, horizontally, quadratic, exponential,
@@ -100,13 +101,13 @@ const Chat = () => {
               leg shaking, fist clenching, ear ringing, mouth drooling, ass clenching, nose sniffling,
               eye watering, eye rolling, hip thursting, earthquaking, sheet gripping, knucklecracking,
             </p>
-            <span>1 min ago</span>
+            <span className="text-sm">1 min ago</span>
           </div>
         </div>
         <div className="max-w-[70%] flex gap-3">
           {/* Texts */}
           <div>
-            <p>
+            <p className="p-4 bg-blue-500 bg-opacity-50 rounded-md">
               jaw dropping, hair pulling, theeth jittering, mind blogging, soul snatching, over stimulating,
               vile, sloppy, heart wrenching, spine tingling, back breaking, atrocious, gushy, creamy, beastly,
               lip biting, gravity defying, nail biting, sweaty, feet kicking, mind blowing, body shivering,
@@ -116,16 +117,24 @@ const Chat = () => {
               sheets soaked, hair drenched, flabbergasting, lip locking, skin peeling, eyelash removing,
               eye widening, pussy popping, nail scraching, back cuts, spectacular, extraordinary, splendid,
               phenomenal, throat blasting, mouth foaming, heavenly, awakening, devils tango and I'd still
-              bouncing on it
+              bouncing on it.
             </p>
-            <span>1 min ago</span>
+            <span className="text-sm">1 min ago</span>
           </div>
         </div>
 
         {/* Own Messages */}
-        <div className="max-w-[70%] flex flex-col self-end gap-3">
-          <p>Of course honey🥰🥰</p>
-          <span>1 min ago</span>
+        <div className="own max-w-[70%] flex flex-col self-end gap-1">
+          {/* Texts */}
+          <img
+            src={ Image }
+            alt=""
+            className="w-full h-72 rounded-lg object-cover"
+          />
+          <div className="p-4 bg-blue-500 rounded-md">
+            <p>Of course honey🥰🥰</p>
+            <span className="text-sm">1 min ago</span>
+          </div>
         </div>
       </div>
 
